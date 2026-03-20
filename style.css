@@ -548,13 +548,15 @@ text-align: center;
 
   /* Department Cards */
   .department-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
     padding: 20px 10px;
   }
 
   .card {
     width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
   }
 
   .card img {
