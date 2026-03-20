@@ -1,7 +1,7 @@
 body {
 font-family: Arial, sans-serif;
 margin: 0;
-background: url('Main.png') center/cover fixed;
+background: url('Hips.jpeg') center/cover fixed;
 background-attachment: fixed;
 }
 
@@ -20,19 +20,19 @@ background: #f5f7fb;
 }
 
 body.health-view {
-background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('health science.png') center/cover fixed;
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('H21.jpeg') center/cover fixed;
 }
 
 body.business-view {
-background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Real Estate Mastermind.png') center/cover fixed;
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('B2.jpeg') center/cover fixed;
 }
 
 body.agriculture-view {
-background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Spread Love 🫶🏼.png') center/cover fixed;
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Argri.jpeg') center/cover fixed;
 }
 
 body.technology-view {
-background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('technology.png') center/cover fixed;
+background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('T2.jpeg') center/cover fixed;
 }
 
 header {
@@ -43,20 +43,33 @@ padding: 30px;
 
 .header-content {
 display: flex;
-justify-content: space-between;
-align-items: flex-start;
+justify-content: flex-start;
+align-items: center;
 gap: 30px;
+}
+
+.header-logo {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.header-logo img {
+width: 84px;
+height: auto;
+display: block;
 }
 
 .header-left {
 flex: 1;
-text-align: center;
+text-align: left;
 }
 
 .header-buttons {
 display: flex;
 gap: 15px;
 align-items: flex-start;
+margin-left: auto;
 }
 
 header h1 { margin: 0 0 6px 0; font-size: 1.8rem; }
@@ -94,6 +107,13 @@ border-radius: 5px;
 border: none;
 font-size: 16px;
 display: block; /* always visible on main page */
+}
+
+.wifi-note {
+margin: 14px 0 0;
+font-size: 0.95rem;
+font-weight: 600;
+color: #002b5b;
 }
 
 /* banner shown at top of department details pages */
@@ -213,6 +233,18 @@ transition: opacity 260ms ease, transform 260ms ease;
 #advice h2 { margin-top: 0; color: #002b5b; }
 #advice p { margin: 10px 0; }
 
+.advice-contact {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 2px solid rgba(0, 43, 91, 0.25);
+  font-weight: 600;
+  color: #002b5b;
+}
+
+.advice-contact p {
+  margin: 6px 0;
+}
+
 
 #backBtn {
 background: #002b5b;
@@ -249,7 +281,7 @@ margin: 30px auto;
 padding: 25px 20px;
 line-height: 1.7;
 color: #222;
-background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('Teaching.png') center/cover no-repeat;
+background: linear-gradient(rgba(104, 104, 104, 0.65), rgba(255, 255, 255, 0.65)), url('Teaching.png') center/cover no-repeat;
 border-radius: 8px;
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -347,11 +379,16 @@ text-align: center;
   .header-content {
     flex-direction: column;
     gap: 15px;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .header-left {
     width: 100%;
+    text-align: left;
+  }
+
+  .header-logo img {
+    width: 68px;
   }
 
   header h1 {
@@ -364,8 +401,9 @@ text-align: center;
 
   .header-buttons {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
+    margin-left: 0;
   }
 
   .about-us-btn {
@@ -445,6 +483,10 @@ text-align: center;
   header h1 {
     font-size: 1.1rem;
     margin-bottom: 5px;
+  }
+
+  .header-logo img {
+    width: 56px;
   }
 
   header p {

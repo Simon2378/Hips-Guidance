@@ -10,8 +10,11 @@
 
 <header>
 <div class="header-content">
+<div class="header-logo">
+<img src="Hips logo.png" alt="HIPS Logo">
+</div>
 <div class="header-left">
-<h1>University Career Guidance Portal</h1>
+<h1>Hips University Career Guidance Portal</h1>
 <p>Helping Advanced Level Students Choose the Right Career Path</p>
 </div>
 <div class="header-buttons">
@@ -21,6 +24,7 @@
 </div>
 
 <input type="text" id="searchBar" placeholder="Search a field like Cybersecurity..." onkeyup="searchCourse()" aria-label="Search courses">
+<p class="wifi-note">Free unlimited wifi</p>
 <button id="backBtn" onclick="goBack()" style="display: none; margin-top: 15px; padding: 10px 20px; cursor: pointer;">Back to Departments</button>
 </header>
 
@@ -29,25 +33,25 @@
 <section id="mainPage" class="department-container">
 
 <div class="card" tabindex="0" role="button" aria-label="Open Health Science department" onclick="showDepartment('health')" onkeydown="cardKeydown(event,'health')">
-<img src="Health science1.png" alt="Health Science">
+<img src="RealHealth.png.jpeg" alt="Health Science">
 <h2>Health Science</h2>
 <p>Medical and health-related careers</p>
 </div>
 
 <div class="card" tabindex="0" role="button" aria-label="Open Business department" onclick="showDepartment('business')" onkeydown="cardKeydown(event,'business')">
-<img src="Business1.png" alt="Business">
+<img src="b1.jpeg" alt="Business">
 <h2>Business</h2>
 <p>Management and entrepreneurship</p>
 </div>
 
 <div class="card" tabindex="0" role="button" aria-label="Open Agriculture department" onclick="showDepartment('agriculture')" onkeydown="cardKeydown(event,'agriculture')">
-<img src="agriculture1.png" alt="Agriculture">
+<img src="Main agricultue.png.jpeg" alt="Agriculture">
 <h2>Agriculture</h2>
 <p>Farming and food production</p>
 </div>
 
 <div class="card" tabindex="0" role="button" aria-label="Open Technology department" onclick="showDepartment('technology')" onkeydown="cardKeydown(event,'technology')">
-<img src="Tech1.png" alt="Technology">
+<img src="T1.jpeg" alt="Technology">
 <h2>Technology</h2>
 <p>Computers and engineering fields</p>
 </div>
@@ -57,16 +61,20 @@
 <section id="advice" class="advice">
   <h2>Congratulations on Passing Your GCE Advanced Level!</h2>
   <p>You’ve reached a major milestone, and we are incredibly proud of you. This is your first step toward a bright future in university and beyond.</p>
-  <p>If you aspire to join the University of Buea (UB), note that passing English in ordinary level is mandatory, along with other required subjects. You must meet specific entrance criteria,
-     so ensure you’ve passed those core exams. For private universities, the process is simpler: you just apply directly to the department of your choice even if you are from a science background or arts backgroung.</p>
-     <p>What i mean is that is you are from a science bcakground and you will like to study the de department of business like accounting, it is possible in private schools to accept you without comolications  </p>
+  <p>If you aspire to join the University Higher Institute Of Proffessional Studies(HIPS) Buea, note that passing English in ordinary level with other required subjects is not mandatory. You must meet specific entrance criteria,
+     so ensure you’ve passed Gce exams. For HIPS, the process is simpler: you just apply directly to the department of your choice even if you are from a science background or arts backgroung.</p>
+     <p>What i mean is that is you are from a science background and you will like to study the de department of business like accounting, it is possible in HIPS to accept you without comolications  </p>
   <p>Before you apply, make sure you have these essential documents ready: a photocopy of your birth certificate, and a receipt of your GCE results showing that you passed.</p>
   <p>Take your time, explore your options, and remember: this is just the beginning of an amazing journey.</p>
+  <div class="advice-contact">
+    <p>web:www.hips.world , email:INFO@HIPS.WORLD , Tel: 670538333-679647761</p>
+    <p>location:BOKWAI NEW LAYOUT(DERIERE LE STADEN DE MOLYKO)-BUEA-BOX 419</p>
+  </div>
 </section>
-
 <!-- banner area shown when a department is selected -->
 <div id="deptBanner" class="dept-banner" style="display: none;"></div>
 <section id="details" style="display: none;"></section>
+
 
 <script src="script.js"></script>
 </body>
