@@ -375,6 +375,17 @@ text-align: center;
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  body,
+  body.about-page,
+  body.health-view,
+  body.business-view,
+  body.agriculture-view,
+  body.technology-view {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+  }
+
   /* Header adjustments */
   .header-content {
     flex-direction: column;
@@ -427,6 +438,8 @@ text-align: center;
     margin: 15px auto;
     padding: 15px;
     font-size: 14px;
+    background-position: center top;
+    background-size: cover;
   }
 
   .about-content p {
@@ -576,6 +589,8 @@ text-align: center;
     width: 90%;
     padding: 15px;
     margin: 15px auto;
+    background-position: center top;
+    background-size: cover;
   }
 
   #advice h2 {
