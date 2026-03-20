@@ -375,15 +375,28 @@ text-align: center;
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
-  body,
-  body.about-page,
-  body.health-view,
-  body.business-view,
-  body.agriculture-view,
+  body {
+    background: url('Hips.jpeg') center top / cover no-repeat;
+  }
+
+  body.about-page {
+    background: url('Teaching.png') center top / cover no-repeat;
+  }
+
+  body.health-view {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('H21.jpeg') center top / cover no-repeat;
+  }
+
+  body.business-view {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('B2.jpeg') center top / cover no-repeat;
+  }
+
+  body.agriculture-view {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Argri.jpeg') center top / cover no-repeat;
+  }
+
   body.technology-view {
-    background-attachment: scroll;
-    background-position: center top;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('T2.jpeg') center top / cover no-repeat;
   }
 
   /* Header adjustments */
@@ -489,6 +502,18 @@ text-align: center;
 }
 
 @media (max-width: 480px) {
+  body,
+  body.about-page,
+  body.health-view,
+  body.business-view,
+  body.agriculture-view,
+  body.technology-view {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #f5f7fb;
+  }
+
   header {
     padding: 15px;
   }
